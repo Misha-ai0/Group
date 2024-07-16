@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="ua">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Купити квиток - Квитки Укрзалізниця </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script defer src="assets/js/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Продаж білетів Укрзалізниця</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="buy-ticket.html">Купити білет</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tickets">
+            <h2>Купити білет</h2>
+            <form id="ticketForm" action="#" method="POST">
+                <label for="from">Звідки:</label>
+                <input type="text" id="from" name="from" required>
+
+                <label for="to">Куди:</label>
+                <input type="text" id="to" name="to" required>
+
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="class">Клас:</label>
+                <select id="class" name="class">
+                    <option value="1">Перший клас</option>
+                    <option value="2">Другий клас</option>
+                    <option value="3">Третій клас</option>
+                </select>
+
+                <button type="submit">Знайти білети</button>
+            </form>
+        </section>
+        <section id="confirmationMessage" class="hidden">
+            <h2>Форма успішно заповнена!</h2>
+            <p id="confirmationDetails"></p>
+            <button id="closeMessageButton">Закрити</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Укрзалізниця. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
